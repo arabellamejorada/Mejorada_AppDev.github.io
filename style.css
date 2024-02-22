@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior:auto;
+  }
+
+/* MAIN SECTION */
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url(img/main.png);
+    background-size:contain;
+    background-position: center;
+    text-align:center;
+}
+
+.main h1 {
+    font-size: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background: linear-gradient(45deg, #ffea05, #1ef2d6, #ff4eb2);
+    background-size: 600% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;  
+    -o-background-clip: text;  
+    animation: gradientAnimation 8s linear infinite;
+    
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    size: 30px;
+    color: #000;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    height: 30px;
+}
+
+.social-icon:hover {
+    color: #314482;
+}
+
+
+.logo {
+    float: left;
+    flex-basis: 20%;
+    margin-right: 20px;
+}
+
+.logo-img {
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+    padding: 14px 16px;
+}
+
+.my-button {
+    background-color: #314482;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 9px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.my-button:hover{
+    color: #314482;
+    background-color: white;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+nav a {
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #314482;
+    font-weight: 700;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    overflow:hidden;
+}
+
+.nav-links ul li a{
+    color: #000000;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#About {
+    background-image: url('img/background1.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+}
+
+#About img {
+    margin-right: 30px;
+    height: 500px;
+    float: left;
+    border: 2px solid #fff;
+}
+
+.wrapper {
+    margin: 10px auto;
+    width: 70%;
+}
+
+#About .text-box {
+    font-size: 30px;
+    margin: 20;
+    padding: 7;
+}
+
+.album {
+    text-emphasis-color: white;
+    font-weight: bold;
+}
+
+/* MEMBERS SECTION */
+
+#Members {
+    background-image: url(img/members.png);
+    background-size:inherit;
+    background-position: center;
+    background-color: white;
+    padding: 100px;
+}
+
+#Members h1 {
+    color: #314482;
+    margin-right: 20px;
+
+}
+
+.members-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.member {
+    text-align: center;
+    cursor: pointer;
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.member:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.member-image {
+    width: 60%; 
+    height: auto; 
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-left: 5;
+    margin-right: 5;
+}
+
+.info {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: display 0.5s ease;
+}
+
+.info table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #314482;
+}
+
+/* DISCOGRAPHY SECTION */
+
+#Discography {
+    background-image: url('img/background2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+.slide {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-item {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#Discography {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  #Discography .album {
+    text-align: center;
+  }
+
+  #Discography img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  #Discography img:hover {
+    transform: scale(1.5);
+  }
+
+  #Discography p {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: white;
+  }
+
+  #Discography a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color:#314482;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+  }
+
+  #Discography a:hover {
+    background-color:white;
+    color: black;
+  }
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #314482;
+    color: #000;
+}
+
