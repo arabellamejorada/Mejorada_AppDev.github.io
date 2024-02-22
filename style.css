@@ -160,6 +160,8 @@ nav a:hover {
     text-decoration: none;
 }
 
+/* ABOUT SECTION */
+
 #About {
     background-image: url('img/background1.png');
     background-size: cover;
@@ -220,11 +222,11 @@ nav a:hover {
     cursor: pointer;
     flex: 0 0 calc(33.333% - 20px);
     margin: 10px;
-    transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+    transition: transform 0.3s ease;
 }
 
 .member:hover {
-    transform: scale(1.1); /* Zoom in on hover */
+    transform: scale(1.1);
 }
 
 .member-image {
