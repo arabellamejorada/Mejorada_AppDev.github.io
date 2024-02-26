@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* MAIN SECTION */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url(img/main.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align:center;
+}
+
+.main h1 {
+    font-size: 5vw;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background: linear-gradient(45deg, #ffea05, #1ef2d6, #ff4eb2);
+    background-size: 600% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;  
+    -o-background-clip: text;  
+    animation: gradientAnimation 8s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.responsiveh1 {
+    text-align: center;
+    font-size: 5vw;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    size: 30px;
+    color: #314482;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    height: 30px;
+}
+
+.logo {
+    float: left;
+    flex-basis: 20%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+    padding: 14px 16px;
+}
+
+.my-button {
+    background-color: #314482;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 9px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.my-button:hover{
+    color: #314482;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 700px){
+    .my-button {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+/* NAVIGATION BAR */
+
+nav {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    justify-content: space-between;
+}
+
+nav a {
+    font-size: 30px;
+    color: #314482;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.nav-links ul li a{
+    color: #314482;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    padding: 7px 13px;
+}
+
+a:hover {
+    color: #314482;
+    background: none;
+    font-weight: 700;
+    transition: .5s;
+}
+
+@media (max-width: 952px){
+    nav a {
+      font-size: 16px;
+    }
+}
+  
+@media (max-width: 858px){
+    .nav-links ul {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #314482;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    .nav-links ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+
+    .nav-links ul li a {
+      font-size: 20px;
+    }
+
+    a:hover,a.active {
+      background: none;
+      color: #314482;
+    }
+}
+
+/* ABOUT SECTION */
+
+#About {
+    background-image: url('img/background1.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+}
+
+.row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+}
+
+.row .left {
+   overflow: hidden;
+}
+
+.row .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.row .right {
+    display: flex;
+    align-items: center;
+}
+
+.row .right .content {
+    padding-left: 20px;
+}
+
+.row .right .content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row .right .content p {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .row .left img {
+        height: 300px;
+        margin-left: 20px;
+    }
+    .row .right .content h1 {
+        padding-left: 0px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .row {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MEMBERS SECTION */
+
+#Members {
+    background-image: url(img/members.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: white;
+    padding: 50px;
+}
+
+#Members h1 {
+    color: #314482;
+    margin-right: 10px;
+    display:flex;
+    font-size: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.members-flex {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.member {
+    text-align: center;
+    cursor: pointer;
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.member:hover {
+    transform: scale(1.1);
+}
+
+.member-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto; 
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-left: 5;
+    margin-right: 5;
+}
+
+.info {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    transition: display 0.5s ease;
+}
+
+.info table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #314482;
+}
+
+@media only screen and (max-width: 768px) {
+    .member {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .member {
+        flex: 0 0 calc(100% - 20px);
+    }
+}
+
+/* DISCOGRAPHY SECTION */
+
+#Discography {
+    background-image: url('img/background2.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 0px;
+}
+
+.slide {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-item {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#Discography .album {
+    text-align: center;
+    background: whitesmoke;
+    padding: 10px 15px;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Discography img {
+    width: 70%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Discography .album:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s ease;
+}
+
+#Discography p {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #314482;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Discography a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color:#314482;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+}
+
+#Discography a:hover {
+    background-color: #405da6;
+    color: white;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

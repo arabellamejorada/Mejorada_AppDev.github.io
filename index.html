@@ -1,0 +1,216 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEJORADA - AppDev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+      <a href="#main" class="logo" NewJeans></a>
+      <nav>
+          <div class="logo">
+              <a href="#main"><img src="img/njlogo1.png" alt="NewJeans Logo" class="logo-img"></a>
+          </div>
+          
+          <div class="nav-links">
+              <ul>
+                  <li> <a href="#About">About</a></li>
+                  <li> <a href="#Members">Members</a></li>
+                  <li> <a href="#Discography">Discography</a></li>
+              </ul>
+          </div>
+      </nav>
+      
+      <div class="main" id="main">
+        <h1 class="responsiveh1" style="text-align:center;"><br><br>NewJeans</h1>
+        
+        <div class="social-icons">
+          <a href="https://www.facebook.com/official.newjeans" target="_blank" class="social-icon"><img src="img/fb.png"></a>
+          <a href="https://www.instagram.com/newjeans_official/" target="_blank" class="social-icon"><img src="img/ig.png"></a>
+          <a href="https://twitter.com/NewJeans_ADOR" target="_blank" class="social-icon"><img src="img/twt.png"></a>
+        </div>
+
+        <a href="https://youtu.be/ArmDp-zijuc?si=Ya0fH5tTe8nss0t-">
+          <button type="button" class="my-button">Latest MV Here!</button>
+        </a>
+      </div>
+      
+    <section id="About">
+        <div class="row">
+
+          <div class="left">
+            <img src="img/img1.png">
+          </div>
+
+          <div class="right">
+            <div class="content">
+              <h1>About NewJeans</h1>
+              <p>NewJeans (뉴진스) is a 5-member girl group under <b>ADOR</b> and <b>HYBE Labels.</b> 
+                The members consist of Minji, Hanni, Danielle, Haerin, and Hyein. They 
+                released their debut single “Attention” on July 22, 2022, followed by their 
+                debut extended play, <i>New Jeans,</i> which was released on August 1, 2022.</p>
+              <br> <p><b>NewJeans Fandom Name:</b> Bunnies (Tokki/토끼)</p>
+
+            </div>
+          
+        </div>
+    </section>
+
+    <section id="Members">
+        <div class="header">
+          <h1>Meet the Members</h1>
+        </div>
+        <div class="members-flex">
+            <div class="member" id="member1" onclick="showInfo('member1')">
+              <img src="img/member1.png" alt="Member 1" class="member-image">
+              <div class="info" style="display: none;">
+                <table>
+                    <tr>
+                      <td><b>Name</b></td>
+                      <td>Hanni Pham<br>Phạm Ngọc Hân</td>
+                    </tr>
+                    <tr>
+                      <td><b>Birthday</b></td>
+                      <td> October 6, 2004 <i>(Age 19)</i></td>
+                    </tr>
+                    <tr>
+                      <td><b>Zodiac</b></td>
+                      <td>Libra</td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="member" id="member2" onclick="showInfo('member2')">
+                <img src="img/member2.png" alt="Member 2" class="member-image">
+                <div class="info" style="display: none;">
+                  <table>
+                    <tr>
+                      <td><b>Name</b></td>
+                      <td>Kim Minji<br>김민지</td>
+                    </tr>
+                    <tr>
+                      <td><b>Birthday</b></td>
+                      <td> May 7, 2004 <i>(Age 19)</i></td>
+                    </tr>
+                    <tr>
+                      <td><b>Zodiac</b></td>
+                      <td>Taurus</td>
+                    </tr>
+                </table>
+                </div>
+              </div>
+        
+            <div class="member" id="member3" onclick="showInfo('member3')">
+              <img src="img/member3.png" alt="Member 3" class="member-image">
+              <div class="info" style="display: none;">
+                <table>
+                  <tr>
+                    <td><b>Name</b></td>
+                    <td>Danielle Marsh<br>Mo Ji-hye (모지혜)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Birthday</b></td>
+                    <td> April 11, 2005 <i>(Age 18)</i></td>
+                  </tr>
+                  <tr>
+                    <td><b>Zodiac</b></td>
+                    <td>Aries</td>
+                  </tr>
+              </table>
+              </div>
+            </div>
+
+            <div class="member" id="member4" onclick="showInfo('member4')">
+                <img src="img/member4.png" alt="Member 4" class="member-image">
+                <div class="info" style="display: none;">
+                  <table>
+                    <tr>
+                      <td><b>Name</b></td>
+                      <td>Kang Hae-rin<br>강해린</td>
+                    </tr>
+                    <tr>
+                      <td><b>Birthday</b></td>
+                      <td> May 15, 2006 <i>(Age 17)</i></td>
+                    </tr>
+                    <tr>
+                      <td><b>Zodiac</b></td>
+                      <td>Taurus</td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+
+            <div class="member" id="member5" onclick="showInfo('member5')">
+                <img src="img/member5.png" alt="Member 5" class="member-image">
+                <div class="info" style="display: none;">
+                  <table>
+                    <tr>
+                      <td><b>Name</b></td>
+                      <td>Lee Hye-in (이혜인)<br>Grace Lee</td>
+                    </tr>
+                    <tr>
+                      <td><b>Birthday</b></td>
+                      <td> April 21, 2008 <i>(Age 15)</i></td>
+                    </tr>
+                    <tr>
+                      <td><b>Zodiac</b></td>
+                      <td>Taurus</td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+            
+            <script>
+              function showInfo(memberId) {
+                  const infoElements = document.querySelectorAll('.info');
+          
+                  infoElements.forEach((element) => {
+                      if (element.parentElement.id !== memberId) {
+                          element.style.display = 'none';
+                      }
+                  });
+          
+                  const currentInfoElement = document.getElementById(memberId).querySelector('.info');
+                  const displayValue = currentInfoElement.style.display;
+          
+                  currentInfoElement.style.display = (displayValue === 'none' || displayValue === '') ? 'block' : 'none';
+              }
+          </script>
+          
+        </div>
+    </section>
+
+    <section id="Discography">
+      <div class="album">
+        <img src="img/1.png" alt="alb1">
+        <p>1st EP: New Jeans</p>
+        <a href="https://open.spotify.com/album/1HMLpmZAnNyl9pxvOnTovV?si=1irj0a-lRkuvSwpsHIx2_Q">Listen Here</a>
+      </div>
+      <div class="album">
+        <img src="img/2.png" alt="alb2">
+        <p>Ditto</p>
+        <a href="https://open.spotify.com/album/7bnqo1fdJU9nSfXQd3bSMe?si=S0zQT2dzQIu6LNukaoWN_A">Listen Here</a>
+      </div>
+      <div class="album">
+        <img src="img/3.png" alt="alb3">
+        <p>OMG</p>
+        <a href="https://open.spotify.com/album/45ozep8uHHnj5CCittuyXj?si=LbLrFxIrRLyFQ1QNs8DHZA">Listen Here</a>
+      </div>
+      <div class="album">
+        <img src="img/4.png" alt="alb4">
+        <p>2nd EP: Get Up</p>
+        <a href="https://open.spotify.com/album/4N1fROq2oeyLGAlQ1C1j18?si=jAtNdisgT6eHhrbcz_TnTw">Listen Here</a>
+      </div>
+      <div class="album">
+        <img src="img/5.png" alt="alb5">
+        <p>NJWMX</p>
+        <a href="https://open.spotify.com/album/6XRGc3GNodkhSrPwHnx1KX?si=2FnmTnzUSJyQOkgGFTLFVA">Listen Here</a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
