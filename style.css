@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url();
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url(main.png);
+    background-size:cover;
+    background-position: center;
+    text-align:center;
+}
+
+.main h1 {
+    font-size: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background: linear-gradient(45deg, #ffea05, #1ef2d6, #00308b, #ff4eb2);
+    background-size: 600% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;  
+    -o-background-clip: text;  
+    animation: gradientAnimation 8s linear infinite;
+    
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    size: 30px;
+    color: #000;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    height: 30px;
+}
+
+.social-icon:hover {
+    color: #314482;
+}
+
+
+.logo {
+    float: left;
+    flex-basis: 20%;
+    margin-right: 20px;
+}
+
+.logo-img {
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+    padding: 14px 16px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+nav a {
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #314482;
+    font-weight: 700;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    overflow:hidden;
+}
+
+.nav-links ul li a{
+    color: #000000;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#About {
+    background-image: url('background1.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+}
+
+#About img {
+    margin-right: 30px;
+    height: 500px;
+    float: left;
+    border: 2px solid #fff;
+}
+
+.wrapper {
+    margin: 10px auto;
+    width: 70%;
+}
+
+#About .text-box {
+    font-size: 30px;
+    margin: 20;
+    padding: 5;
+}
+
+.album {
+    text-emphasis-color: white;
+    font-weight: bold;
+}
+
+#Members {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+}
+
+.members-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the start of the container */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.member {
+    text-align: center;
+    cursor: pointer;
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.member:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.member-image {
+    width: 60%; /* Set width to 100% for responsiveness */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px;
+    margin-left: 5;
+    margin-right: 5;
+}
+
+.info {
+    background-color: #314482;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: display 0.3s ease;
+}
+
+.info table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+
+#Discography {
+    background-image: url('background2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+.section-heading {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.albums-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.album {
+    text-align: center;
+    cursor: pointer;
+    flex: 0 0 calc(25% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+    position: relative;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.album-link {
+    color: #ff4eb2;
+}
+
+.album-info {
+    color: white;
+    background-color: rgba(49, 68, 130, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.album:hover .album-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.album-link {
+    display: block;
+    padding: 10px;
+    background-color: #314482;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.album-link:hover {
+    background-color: #1e2f5b;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #314482;
+    color: #000;
+}
+
