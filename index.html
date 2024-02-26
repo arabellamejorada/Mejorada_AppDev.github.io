@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport' content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEJORADA - AppDev</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,9 +14,10 @@
           <div class="logo">
               <a href="#main"><img src="img/njlogo1.png" alt="NewJeans Logo" class="logo-img"></a>
           </div>
+          
           <div class="nav-links">
               <ul>
-                  <li> <a href="#About" class="about">About</a></li>
+                  <li> <a href="#About">About</a></li>
                   <li> <a href="#Members">Members</a></li>
                   <li> <a href="#Discography">Discography</a></li>
               </ul>
@@ -24,7 +25,7 @@
       </nav>
       
       <div class="main" id="main">
-        <h1 style="text-align:center;"><br><br>NewJeans</h1>
+        <h1 class="responsiveh1" style="text-align:center;"><br><br>NewJeans</h1>
         
         <div class="social-icons">
           <a href="https://www.facebook.com/official.newjeans" target="_blank" class="social-icon"><img src="img/fb.png"></a>
@@ -38,18 +39,23 @@
       </div>
       
     <section id="About">
-        <img src="img/img1.png">
-        <div class="wrapper">
-            <div class="text-box">
-                <h1>About the Group</h1>
-                <p>
-                    <b>NewJeans</b> (뉴진스) is a five member South Korean
-                    girl-group under <b>ADOR.</b> They made their music video
-                    debut on July 22, 2022, and made their official debut
-                    on August 1st with their album <i class="album"><a href=https://open.spotify.com/album/1HMLpmZAnNyl9pxvOnTovV?si=emATByVlQWWCY7q6od1jpQ>New Jeans</a></i>
-                </p>
-            </div>
+        <div class="row">
 
+          <div class="left">
+            <img src="img/img1.png">
+          </div>
+
+          <div class="right">
+            <div class="content">
+              <h1>About NewJeans</h1>
+              <p>NewJeans (뉴진스) is a 5-member girl group under <b>ADOR</b> and <b>HYBE Labels.</b> 
+                The members consist of Minji, Hanni, Danielle, Haerin, and Hyein. They 
+                released their debut single “Attention” on July 22, 2022, followed by their 
+                debut extended play, <i>New Jeans,</i> which was released on August 1, 2022.</p>
+              <br> <p><b>NewJeans Fandom Name:</b> Bunnies (Tokki/토끼)</p>
+
+            </div>
+          
         </div>
     </section>
 
@@ -58,8 +64,8 @@
           <h1>Meet the Members</h1>
         </div>
         <div class="members-flex">
-            <div class="member" id="member1">
-              <img src="img/member1.png" alt="Member 1" class="member-image" onclick="showInfo('member1')">
+            <div class="member" id="member1" onclick="showInfo('member1')">
+              <img src="img/member1.png" alt="Member 1" class="member-image">
               <div class="info" style="display: none;">
                 <table>
                     <tr>
@@ -78,8 +84,8 @@
               </div>
             </div>
 
-            <div class="member" id="member2">
-                <img src="img/member2.png" alt="Member 2" class="member-image" onclick="showInfo('member2')">
+            <div class="member" id="member2" onclick="showInfo('member2')">
+                <img src="img/member2.png" alt="Member 2" class="member-image">
                 <div class="info" style="display: none;">
                   <table>
                     <tr>
@@ -98,8 +104,8 @@
                 </div>
               </div>
         
-            <div class="member" id="member3">
-              <img src="img/member3.png" alt="Member 3" class="member-image" onclick="showInfo('member3')">
+            <div class="member" id="member3" onclick="showInfo('member3')">
+              <img src="img/member3.png" alt="Member 3" class="member-image">
               <div class="info" style="display: none;">
                 <table>
                   <tr>
@@ -118,8 +124,8 @@
               </div>
             </div>
 
-            <div class="member" id="member4">
-                <img src="img/member4.png" alt="Member 4" class="member-image" onclick="showInfo('member4')">
+            <div class="member" id="member4" onclick="showInfo('member4')">
+                <img src="img/member4.png" alt="Member 4" class="member-image">
                 <div class="info" style="display: none;">
                   <table>
                     <tr>
@@ -138,8 +144,8 @@
                 </div>
             </div>
 
-            <div class="member" id="member5">
-                <img src="img/member5.png" alt="Member 5" class="member-image" onclick="showInfo('member5')">
+            <div class="member" id="member5" onclick="showInfo('member5')">
+                <img src="img/member5.png" alt="Member 5" class="member-image">
                 <div class="info" style="display: none;">
                   <table>
                     <tr>
@@ -161,10 +167,9 @@
             <script>
               function showInfo(memberId) {
                   const infoElements = document.querySelectorAll('.info');
-                  
+          
                   infoElements.forEach((element) => {
                       if (element.parentElement.id !== memberId) {
-                          // Close other open info boxes
                           element.style.display = 'none';
                       }
                   });
@@ -172,7 +177,6 @@
                   const currentInfoElement = document.getElementById(memberId).querySelector('.info');
                   const displayValue = currentInfoElement.style.display;
           
-                  // Toggle the display of the clicked member's info
                   currentInfoElement.style.display = (displayValue === 'none' || displayValue === '') ? 'block' : 'none';
               }
           </script>
